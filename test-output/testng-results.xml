@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[resume uploaded on monster]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="192643" started-at="2018-01-19T08:33:04Z" finished-at="2018-01-19T08:36:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="192643" started-at="2018-01-19T08:33:04Z" finished-at="2018-01-19T08:36:16Z">
+      <class name="practice.MonsterLoginTest">
+        <test-method status="PASS" signature="main()[pri:2, instance:practice.MonsterLoginTest@77ec78b9]" name="main" duration-ms="192461" started-at="2018-01-19T14:03:04Z" finished-at="2018-01-19T14:06:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[resume uploaded on monster]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- main -->
+      </class> <!-- practice.MonsterLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
