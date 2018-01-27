@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -37,10 +38,12 @@ public class MonsterLogin {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='username_login']")));
 		
 		driver.findElement(By.xpath("//input[@id='username_login']")).sendKeys("mutturajgowd1025@gmail.com");
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password_input']")));
-	driver.findElement(By.xpath("//input[@id='password_input']")).sendKeys("ckmr1025");
+//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password_input']")));
+	//driver.findElement(By.xpath("//input[@id='password_input']")).sendKeys("ckmr1025");
+		JavascriptExecutor js1 =(JavascriptExecutor)driver;
 		
-		
+		js1.executeScript("document.getElementById('password_input').value='ckmr1025'");
+		driver=(WebDriver)js1;
 	driver.findElement(By.xpath("//input[@value='Sign In']")).click();
 		
 	driver.navigate().refresh();
@@ -51,12 +54,14 @@ public class MonsterLogin {
 	
 	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@href='#edit_resume']")));
 		driver.findElement(By.xpath("//a[@href='#edit_resume']")).click();
-		driver.findElement(By.xpath("//input[@type='file']")).click();
+		//driver.findElement(By.xpath("//input[@type='file']")).click();
 		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("wordresume")));
-		WebElement choose=driver.findElement(By.id("wordresume"));
-		
-choose.click();
+		//WebElement choose=driver.findElement(By.id("wordresume"));
+		JavascriptExecutor js2 =(JavascriptExecutor)driver;
+		js2.executeScript("document.getElementById('wordresume').click();");
+		driver=(WebDriver)js2;
+//    choose.click();
 
 		Runtime.getRuntime().exec("C:\\Users\\muttu\\Desktop\\monster.exe");
 		
@@ -76,14 +81,14 @@ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@typ
 	
 	driver=(WebDriver) js;
 	
-//	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//img[contains(@src,'user_upload')])[1]")));
-//	WebElement logout=driver.findElement(By.xpath("(//img[contains(@src,'user_upload')])[1]"));				
-//	Actions act=new Actions(driver);
-//	
-//	act.moveToElement(logout).perform();
-//	
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[.='Logout']")));
-driver.findElement(By.xpath("//a[.='Logout']")).click();
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//img[contains(@src,'user_upload')])[1]")));
+	WebElement logout=driver.findElement(By.xpath("(//img[contains(@src,'user_upload')])[1]"));				
+	Actions act=new Actions(driver);
+	
+	act.moveToElement(logout).perform();
+	
+	//	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[.='Logout']")));
+//driver.findElement(By.xpath("//a[.='Logout']")).click();
 		driver.close();
 		
 	}
