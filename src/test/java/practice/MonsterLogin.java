@@ -38,7 +38,7 @@ public class MonsterLogin {
 		
 		driver.findElement(By.xpath("//input[@id='username_login']")).sendKeys("mutturajgowd1025@gmail.com");
 		
-	driver.findElement(By.xpath("//input[@id='passwd_temp']")).sendKeys("ckmr1025");
+	driver.findElement(By.xpath("//input[@id='passwd_input']")).sendKeys("ckmr1025");
 	driver.findElement(By.xpath("//input[@value='Sign In']")).click();
 		
 	driver.navigate().refresh();
