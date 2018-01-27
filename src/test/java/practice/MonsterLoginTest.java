@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class MonsterLoginTest {
 
-  @Test(priority=2)
+  @Test
   public void main() throws InterruptedException, IOException {
    String [] args=null;
 	  MonsterLogin.main(args);
