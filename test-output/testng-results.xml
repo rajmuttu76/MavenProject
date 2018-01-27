@@ -5,12 +5,12 @@
       <![CDATA[resume uploaded on monster]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="101585" started-at="2018-01-27T11:30:09Z" finished-at="2018-01-27T11:31:50Z">
+  <suite name="Default suite" duration-ms="96741" started-at="2018-01-27T11:54:56Z" finished-at="2018-01-27T11:56:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="101585" started-at="2018-01-27T11:30:09Z" finished-at="2018-01-27T11:31:50Z">
+    <test name="Default test" duration-ms="96741" started-at="2018-01-27T11:54:56Z" finished-at="2018-01-27T11:56:33Z">
       <class name="practice.MonsterLoginTest">
-        <test-method status="PASS" signature="main()[pri:2, instance:practice.MonsterLoginTest@77ec78b9]" name="main" duration-ms="101254" started-at="2018-01-27T17:00:09Z" finished-at="2018-01-27T17:01:50Z">
+        <test-method status="PASS" signature="main()[pri:2, instance:practice.MonsterLoginTest@77ec78b9]" name="main" duration-ms="96640" started-at="2018-01-27T17:24:56Z" finished-at="2018-01-27T17:26:33Z">
           <reporter-output>
             <line>
               <![CDATA[resume uploaded on monster]]>

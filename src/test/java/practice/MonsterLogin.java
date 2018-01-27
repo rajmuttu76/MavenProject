@@ -38,8 +38,7 @@ public class MonsterLogin {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='username_login']")));
 		
 		driver.findElement(By.xpath("//input[@id='username_login']")).sendKeys("mutturajgowd1025@gmail.com");
-	//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password_input']")));
-	//driver.findElement(By.xpath("//input[@id='password_input']")).sendKeys("ckmr1025");
+	
 		JavascriptExecutor js1 =(JavascriptExecutor)driver;
 		
 		js1.executeScript("document.getElementById('password_input').value='ckmr1025'");
